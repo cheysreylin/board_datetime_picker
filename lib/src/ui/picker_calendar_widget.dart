@@ -184,7 +184,7 @@ abstract class PickerCalendarState<T extends PickerCalendarWidget>
   Widget keyboardMenu({required bool isWide}) {
     return Container(
       decoration: BoxDecoration(
-        color: args.options.getForegroundColor(context).withValues(alpha: 0.9),
+        color: args.options.getForegroundColor(context).withOpacity(0.9),
       ),
       height: keyboardMenuHeight,
       child: SingleChildScrollView(
@@ -197,7 +197,7 @@ abstract class PickerCalendarState<T extends PickerCalendarWidget>
                 icon: Icons.arrow_back_rounded,
                 bgColor: args.options.getForegroundColor(context),
                 fgColor:
-                    args.options.getTextColor(context)?.withValues(alpha: 0.6),
+                    args.options.getTextColor(context)?.withOpacity(0.6),
                 onTap: () => moveFocus(false),
                 // buttonSize: buttonSize,
               ),
@@ -206,7 +206,7 @@ abstract class PickerCalendarState<T extends PickerCalendarWidget>
                 icon: Icons.arrow_forward_rounded,
                 bgColor: args.options.getForegroundColor(context),
                 fgColor:
-                    args.options.getTextColor(context)?.withValues(alpha: 0.6),
+                    args.options.getTextColor(context)?.withOpacity(0.6),
                 onTap: () => moveFocus(true),
                 // buttonSize: buttonSize,
               ),
@@ -215,7 +215,7 @@ abstract class PickerCalendarState<T extends PickerCalendarWidget>
                 icon: Icons.keyboard_hide_rounded,
                 bgColor: args.options.getForegroundColor(context),
                 fgColor:
-                    args.options.getTextColor(context)?.withValues(alpha: 0.6),
+                    args.options.getTextColor(context)?.withOpacity(0.6),
                 onTap: args.onKeyboadClose,
                 // buttonSize: buttonSize,
               ),
